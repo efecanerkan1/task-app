@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Task Title Input -->
+    <EditText
+        android:id="@+id/editTextTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"/>
+
+    <!-- Due Date Input -->
+    <EditText
+        android:id="@+id/editTextTaskDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Date (yyyy-MM-dd)"
+        android:focusable="false"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Due Time Input -->
+    <EditText
+        android:id="@+id/editTextTaskTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due Time (HH:mm)"
+        android:focusable="false"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

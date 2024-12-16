@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardViewTask"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:padding="16dp"
+    android:background="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Task Title and Time -->
+        <LinearLayout
+            android:id="@+id/linearLayoutTaskInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentStart="true">
+
+            <!-- Task Title -->
+            <TextView
+                android:id="@+id/textViewTaskTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task Title"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <!-- Task Time -->
+            <TextView
+                android:id="@+id/textViewTaskTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due Time: "
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Checkbox for completion -->
+        <CheckBox
+            android:id="@+id/checkBoxTaskCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Delete Button -->
+        <ImageButton
+            android:id="@+id/buttonDeleteTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="Delete Task"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_below="@id/checkBoxTaskCompleted"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
